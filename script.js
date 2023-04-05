@@ -1,8 +1,8 @@
-import {data as characters} from 'data.js';
-
+import {data as characters} from '/data.js';
+console.log(characters)
 const container = document.createElement('div');
 container.className = 'container';
-
+const main = document.querySelector('main');
 main.append(container);
 const input = document.querySelector("#findCharacterName");
 
@@ -28,9 +28,18 @@ function createCard(obj) {
   const card = document.createElement('div');
   card.className = 'card';
 
+
+  
+  const image = document.createElement("img");
+  image.setAttribute("src", obj.image);
+
+  // const image = document.createElement('img');
+  // image.className = 'card_character-image';
+  // image.setAttribute = ('src', `${obj.image}`); 
+
   const name = document.createElement('h2');
   name.className = 'card_character-name';
-  name.textContent = `${obj.name}`
+  name.textContent = obj.name;
 
   const actor = document.createElement('p');
   actor.className = 'card_character-actor';
@@ -46,13 +55,13 @@ function createCard(obj) {
 
   const wand = document.createElement('p');
   wand.className = 'card_character-wand';
-  wand.textContent = `${obj.wand}`;
+  wand.textContent = `${obj.wand.wood, obj.wand.core, obj.wand.length}`;
 
   const alive = document.createElement('p');
   alive.className = 'card_character-alive';
   alive.textContent = `${obj.alive}`;
 
 
-  card.append(name, actor, gender, house, wand, alive);
+  card.append(image, name, actor, gender, house, wand, alive);
   container.append(card);
 }

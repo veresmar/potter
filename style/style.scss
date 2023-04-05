@@ -31,13 +31,11 @@ p {
 .forms-wrapper {
   display: flex;
   width: 495px;
-  
+
   form {
     margin-right: 20px;
     select {
-      option {
-        color: #ABB5BE;
-      }
+      color: #ABB5BE;   
     }
     label {
       font-size: 16px;
@@ -47,4 +45,10 @@ p {
       color: #ABB5BE;
     }
   }
+}
+
+
+
+.container {
+  padding: 0 50px;
 }

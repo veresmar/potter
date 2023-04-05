@@ -40,7 +40,7 @@ p {
 .forms-wrapper form {
   margin-right: 20px;
 }
-.forms-wrapper form select option {
+.forms-wrapper form select {
   color: #ABB5BE;
 }
 .forms-wrapper form label {
@@ -49,4 +49,8 @@ p {
 }
 .forms-wrapper form input {
   color: #ABB5BE;
+}
+
+.container {
+  padding: 0 50px;
 }/*# sourceMappingURL=style.css.map */
