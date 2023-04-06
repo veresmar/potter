@@ -33,9 +33,9 @@ function createCard(obj) {
   const image = document.createElement("img");
   image.setAttribute("src", obj.image);
 
-  // const image = document.createElement('img');
-  // image.className = 'card_character-image';
-  // image.setAttribute = ('src', `${obj.image}`); 
+  
+  const cardTestWrap = document.createElement('div');
+  cardTestWrap.className = 'card_text-wrapper';
 
   const name = document.createElement('h2');
   name.className = 'card_character-name';
@@ -43,25 +43,25 @@ function createCard(obj) {
 
   const actor = document.createElement('p');
   actor.className = 'card_character-actor';
-  actor.textContent = `${obj.actor}`;
+  actor.textContent = `Actor: ${obj.actor}`;
 
   const gender = document.createElement('p');
   gender.className = 'card_character-gender';
-  gender.textContent = `${obj.gender}`;
+  gender.textContent = `Gender: ${obj.gender}`;
 
   const house = document.createElement('p');
   house.className = 'card_character-house';
-  house.textContent = `${obj.house}`;
+  house.textContent = `House: ${obj.house}`;
 
   const wand = document.createElement('p');
   wand.className = 'card_character-wand';
-  wand.textContent = `${obj.wand.wood, obj.wand.core, obj.wand.length}`;
+  wand.textContent = `Wand: ${obj.wand.wood}, ${obj.wand.core}, ${obj.wand.length}`;
 
   const alive = document.createElement('p');
   alive.className = 'card_character-alive';
-  alive.textContent = `${obj.alive}`;
+  alive.innerText = obj.alive ? "Alive: yes" : "Alive: no";
 
-
-  card.append(image, name, actor, gender, house, wand, alive);
+  cardTestWrap.append(name, actor, gender, house, wand, alive);
+  card.append(image, cardTestWrap);
   container.append(card);
 }

@@ -63,10 +63,24 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
-    
+    width: 20.11rem;
+    margin-bottom:2rem;
+
+    .card_text-wrapper {
+      padding:25px;
+
+      h2 {
+        color: #152536;
+        margin-bottom:0.5rem;
+      }
+      p {
+        font-size:17.5px;
+      }
+    }
+
     img {
-      width: 20em;
-      height: 25em;
+      width: 20rem;
+      height: 25rem;
       object-fit: cover;
     }
   }
