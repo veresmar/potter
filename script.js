@@ -1,4 +1,4 @@
-import {data as characters} from '/data.js';
+import {data as characters} from './data.js';
 console.log(characters)
 const container = document.createElement('div');
 container.className = 'container';

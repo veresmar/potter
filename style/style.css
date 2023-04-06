@@ -54,7 +54,11 @@ p {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px 50px;
+  padding-top: 40px;
   gap: 2px;
-  margin: 0 auto;
+  justify-items: center;
+}
+.container .card img {
+  width: 10em;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
