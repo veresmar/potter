@@ -12,6 +12,7 @@ header {
   align-items: center;
   padding-top: 64px;
   padding-bottom: 40px;
+  background-color: #D4D3D8;
 }
 
 h1 {
@@ -51,6 +52,10 @@ p {
   color: #ABB5BE;
 }
 
+main {
+  background-color: #D4D3D8;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,7 +63,14 @@ p {
   gap: 2px;
   justify-items: center;
 }
+.container .card {
+  background-color: #FFFFFF;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
 .container .card img {
-  width: 10em;
-  height: auto;
+  width: 20em;
+  height: 25em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
