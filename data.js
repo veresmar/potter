@@ -16,6 +16,7 @@ export const data = [
         actor: "Daniel Radcliffe",
         alive: true,
         image: "http://hp-api.herokuapp.com/images/harry.jpg",
+        
     },
     {
         name: "Hermione Granger",
@@ -34,6 +35,7 @@ export const data = [
         actor: "Emma Watson",
         alive: true,
         image: "http://hp-api.herokuapp.com/images/hermione.jpeg",
+        
     },
     {
         name: "Ron Weasley",
@@ -52,6 +54,7 @@ export const data = [
         actor: "Rupert Grint",
         alive: true,
         image: "http://hp-api.herokuapp.com/images/ron.jpg",
+        
     },
     {
         name: "Draco Malfoy",

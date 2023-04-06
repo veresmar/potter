@@ -37,14 +37,22 @@ p {
   form {
     margin-right: 20px;
     select {
-      color: #ABB5BE;   
+      color: #ABB5BE; 
+      padding: 8px 17px;
+      border: 0.2px #ABB5BE solid;
+      border-radius: 0.3rem;
+      margin-top: 3px;  
     }
     label {
       font-size: 16px;
       color: #818182;
     }
     input {
-      color: #ABB5BE;
+      opacity: 0.83;
+      padding: 9px 17px;
+      border: 0.2px #ABB5BE solid;
+      border-radius: 0.3rem;
+      margin-top: 3px;
     }
   }
 }

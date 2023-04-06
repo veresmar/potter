@@ -5,17 +5,22 @@ container.className = 'container';
 const main = document.querySelector('main');
 main.append(container);
 const input = document.querySelector("#findCharacterName");
+const select = document.querySelector("#school");
 
 
 function findName() {
   let value = input.value.toLowerCase().trim();
   container.innerHTML = '';
   let sort = characters.filter(el => 
-    el.keywords.toLowerCase().trim().includes(value) || '');
+    el.name.toLowerCase().includes(value.toLowerCase()) || 
+    el.actor.toLowerCase().includes(value.toLowerCase()));
+  if (select.value !== "") {
+    sort = sort.filter(el => el.house === select.value);
+  }
   renderCard(sort);
 }
 
-input.addEventListener('input', findName)
+// input.addEventListener('input', findName)
 
 function renderCard(data) {
   data.forEach(element => createCard(element));
@@ -27,7 +32,6 @@ renderCard(characters);
 function createCard(obj) {
   const card = document.createElement('div');
   card.className = 'card';
-
 
   
   const image = document.createElement("img");
@@ -65,3 +69,8 @@ function createCard(obj) {
   card.append(image, cardTestWrap);
   container.append(card);
 }
+
+input.addEventListener('input', findName);
+select.addEventListener('change', findName);
+
+renderCard(characters);
