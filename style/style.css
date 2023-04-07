@@ -78,6 +78,17 @@ main {
   width: 20.11rem;
   margin-bottom: 2rem;
 }
+.container .card .button-like {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  right: 4.5rem;
+}
+.container .card .button-like img.button-icon {
+  width: 6rem;
+  height: auto;
+}
 .container .card .card_text-wrapper {
   padding: 25px;
 }
@@ -88,7 +99,7 @@ main {
 .container .card .card_text-wrapper p {
   font-size: 17.5px;
 }
-.container .card img {
+.container .card .card_img {
   width: 20rem;
   height: 25rem;
   -o-object-fit: cover;

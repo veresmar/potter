@@ -74,6 +74,19 @@ main {
     width: 20.11rem;
     margin-bottom:2rem;
 
+    .button-like {
+      position: absolute;
+      z-index: 1;
+      background-color: transparent;
+      border: none;
+      right:4.5rem;
+    
+      img.button-icon {
+        width: 6rem;
+        height: auto;
+      }
+    }
+
     .card_text-wrapper {
       padding:25px;
 
@@ -86,10 +99,14 @@ main {
       }
     }
 
-    img {
+    .card_img {
       width: 20rem;
       height: 25rem;
       object-fit: cover;
     }
+
+    
   }
 }
+
+

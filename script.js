@@ -8,6 +8,8 @@ const input = document.querySelector("#findCharacterName");
 const select = document.querySelector("#school");
 
 
+
+
 function findName() {
   let value = input.value.toLowerCase().trim();
   container.innerHTML = '';
@@ -33,10 +35,19 @@ function createCard(obj) {
   const card = document.createElement('div');
   card.className = 'card';
 
+  // LIKE BUTTON 
+
+  const buttonLike = document.createElement('button');
+  buttonLike.className = 'button-like';
+  const buttonIcon = document.createElement('img');
+  buttonIcon.className = 'button-icon';
+  buttonIcon.setAttribute("src", '/style/circle.png');
+  buttonLike.append(buttonIcon);
+
   
   const image = document.createElement("img");
   image.setAttribute("src", obj.image);
-
+  image.className = 'card_img';
   
   const cardTestWrap = document.createElement('div');
   cardTestWrap.className = 'card_text-wrapper';
@@ -66,7 +77,7 @@ function createCard(obj) {
   alive.innerText = obj.alive ? "Alive: yes" : "Alive: no";
 
   cardTestWrap.append(name, actor, gender, house, wand, alive);
-  card.append(image, cardTestWrap);
+  card.append(buttonLike, image, cardTestWrap);
   container.append(card);
 }
 
